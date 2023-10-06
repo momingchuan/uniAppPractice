@@ -1,5 +1,15 @@
 <template>
 	<view class="out">
+		<navigator url="/pages/list/list">跳转链表</navigator>
+		<button type="warn">确认提交</button>
+		<button size="mini"">确定</button>
+		<input type="text">
+		<video src=""></video>
+		
+		<image src="/static/images/q2.jpg" mode="" class="myimg"></image>
+		
+		<image src="/static/images/q3.jpg" mode="" class="Myimage"></image>
+		
 		<view class="box"></view>
 		<view class="block"></view>
 		 <icon type="success_no_circle" size="26"/>
@@ -29,18 +39,22 @@
 			</view>
 		</scroll-view>
 
-		<swiper class="swiper" circular duration="1000">
+		<swiper class="swiper" circular duration="1000" indicator-dots>
 			<swiper-item class="item">
-				<image src="../../static/images/q.jpg" mode=""></image>
+				<image src="../../static/images/q.jpg" mode="aspectFill"></image>
 				</swiper-item >
 			<swiper-item class="item">
-				<image src="../../static/images/q2.jpg" mode=""></image>
+				<image src="../../static/images/q2.jpg" mode="aspectFill"></image>
 				</swiper-item>
 			<swiper-item class="item">
-				<image src="../../static/images/q3.jpg" mode=""></image>
+				<image src="../../static/images/q3.jpg" mode="aspectFill"></image>
 			</swiper-item>
 					
 		</swiper>
+		
+		<view style="height: 500rpx;">
+			
+		</view>
 	</view>
 
 </template>
@@ -53,6 +67,20 @@
 
 <style lang="scss">
 
+.myimg{
+	
+	width: 300rpx;
+	height: 300rpx;
+}
+
+
+.Myimage{
+	width: 400rpx;
+	height: 300rpx;
+	
+}
+
+
 .out{
 	.box{
 		width: 200px;
@@ -63,10 +91,14 @@
 		width: 750rpx;
 		height: 200rpx;
 		background: gray;
-		
-		
-		
-
+.swiper{
+	height: 600rpx;
+	.item{
+		width: 400rpx;
+		height: 400rpx;
+	}
+	
+}
 
 		
 	}
@@ -97,8 +129,8 @@
 </style>
 
 
-<<<<<<< .mine
+<!-- <<<<<<< .mine
 /*2.5  无法 完*/
 =======
 /*2.5  你在吗 完*/
->>>>>>> .theirs
+>>>>>>> .theirs -->

@@ -5,7 +5,7 @@
 		{
 			"path": "pages/index/index",
 			"style": {
-				"navigationBarTitleText": "零基础入了门uiniApp"
+				"navigationBarTitleText": "首页"
 			}
 		}
 		
@@ -21,11 +21,55 @@
             }
             
         }
+        ,{
+            "path" : "pages/about/about",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "关于我们",
+                "enablePullDownRefresh": false
+            }
+            
+        }
+        ,{
+            "path" : "pages/demo/demo",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "demo",
+                "enablePullDownRefresh": false
+            }
+            
+        }
     ],
 	"globalStyle": {
 		"navigationBarTextStyle": "black",
 		"navigationBarTitleText": "uni-app",
 		"navigationBarBackgroundColor": "#F8F8F8",
 		"backgroundColor": "#F8F8F8"
+	},
+	"tabBar": {
+		"color":"#3365",
+		"selectedColor": "#015FF9",
+		"list": [
+			{
+				"text": "首页",
+				"pagePath": "pages/index/index",
+				"iconPath": "static/images/tabbar/home0.png",
+				"selectedIconPath": "static/images/tabbar/home1.png"
+			},
+
+			{
+				"text": "新闻列表",
+				"pagePath": "pages/list/list",
+				"iconPath": "static/images/tabbar/list0.png",
+				"selectedIconPath": "static/images/tabbar/list1.png"
+			},
+			{
+				"text": "关于我们",
+				"pagePath": "pages/about/about",
+				"iconPath": "static/images/tabbar/about0.png",
+				"selectedIconPath": "static/images/tabbar/about1.png"
+			}
+		]
 	}
+	
 }
